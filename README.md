@@ -5,7 +5,7 @@ This portfolio secures one notional, unclassified small UAS across a series of r
 | # | Project | Purpose | Status |
 |---|---|---|---|
 | P1 | [Security architecture and requirements](https://github.com/samyoon727ca/uas-sec-p1-architecture) | Trust boundaries, STRIDE/EMB3D/ATT&CK for ICS threat model, NIST SP 800-160 resiliency mapping, derived "shall" requirements with machine-checked traceability and a verification plan, SysML v2 model. Five-minute read: [PDR brief](https://github.com/samyoon727ca/uas-sec-p1-architecture/blob/main/brief/pdr-brief.pdf) | Complete |
-| P2 | Verified boot chain | Signed images, rollback protection and measured boot on a development board | Planned |
+| P2 | [Verified boot chain](https://github.com/samyoon727ca/uas-sec-p2-verified-boot) | Verified boot from a hardware root of trust, TPM-sealed keys under signed PCR policies with anti-rollback, PX4 Bootloader Secure Boot. Scripted evidence in QEMU with swtpm, then on a Raspberry Pi 4 and a Pixhawk 6X | In progress |
 | P3 | PKI and signed updates | Offline root CA, HSM-backed intermediate, device identity, firmware signing, rotation and revocation | Planned |
 | P4 | Hardened image and supply chain | Read-only, integrity-protected Linux image; SBOM, CVE scanning, signed artifacts and build provenance in CI | Planned |
 | P5 | Hardware and firmware assessment | Debug-interface access, firmware extraction and analysis, with findings mapped to P1 requirements | Planned |
